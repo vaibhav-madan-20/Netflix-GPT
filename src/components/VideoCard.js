@@ -1,5 +1,5 @@
 import React from 'react'
-import { API_OPTIONS, TMDB_IMAGE_URL } from '../utils/constants';
+import { API_OPTIONS, TMDB_IMAGE } from '../utils/constants';
 import { useDispatch, useSelector } from 'react-redux';
 import { addNowPlayingTrailer } from '../utils/moviesSlice';
 import { toggleGptState } from '../utils/gptSlice';
@@ -27,7 +27,7 @@ const VideoCard = ({ movie }) => {
   }
   
   return <div className="w-32 sm:w-36 md:w-40 pr-3 cursor-pointer hover:scale-105 duration-200" onClick={handleClick}>
-    <img src={TMDB_IMAGE_URL + movie.poster_path} alt="poster"
+    <img src={TMDB_IMAGE + movie.poster_path} alt="poster"
     />
   </div>
 }

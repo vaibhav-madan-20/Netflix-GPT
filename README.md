@@ -1,5 +1,15 @@
 # Netflix GPT
-A netflix clone. Uses TMBI api to fetch movies data, youtube for displaying trailer and LLM for searching movies.
+A netflix clone. Uses TMBI api to fetch movies data, youtube for displaying trailer and large language model(LLM) for searching movies.
+
+## Screenshots
+![Login page](screenshots/2.png)
+---
+![Home page](screenshots/1.png)
+---
+![Home page](screenshots/3.png)
+---
+![Search page](screenshots/4.png)
+---
 
 ## Local Installation
 
@@ -72,3 +82,6 @@ npm start
         - Movie lists
 - GPT search bar
     - Movie suggestions
+
+---
+When running the project, you may find an empty main page with no content. This is because [Indian Government has blocked access to some parts of IMDB.](https://www.themoviedb.org/talk/65d4b89ce640d6017dececac) You can change your DNS settings to workaround this.

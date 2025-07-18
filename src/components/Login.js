@@ -41,7 +41,7 @@ const Login = () => {
                     // Profile updated!
                     gptState && dispatch(toggleGptState());
                     dispatch(addUser({ uid: user.uid, displayName: user.displayName, email: user.email, photoURL: user.photoURL }));
-                    console.log(auth.currentUser);
+                    // console.log(auth.currentUser);
                 })
                 .catch((error) => {
                     console.log(error.code);
@@ -129,12 +129,14 @@ const Login = () => {
                     className="w-full p-3 mb-4 bg-gray-800 text-white rounded focus:outline-none focus:ring-2 focus:ring-red-600"
                 />}
                 <input
+                autoComplete='on'
                     ref={email}
                     type="text"
                     placeholder="Email address"
                     className="w-full p-3 mb-4 bg-gray-800 text-white rounded focus:outline-none focus:ring-2 focus:ring-red-600"
                 />
                 <input
+                    autoComplete='on'
                     ref={password}
                     type="password"
                     placeholder="Password"

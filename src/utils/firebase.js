@@ -17,4 +17,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-export const auth = getAuth();
+export const auth = getAuth(app);
+// auth.languageCode = 'it';
+// To apply the default browser preference instead of explicitly setting it.
+auth.useDeviceLanguage();
